@@ -1,0 +1,20 @@
+{
+  "name": "CCH2 Productivity Extension",
+  "description": "Tweaks to CCH2 app for productivity",
+  "version": "0.1",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "CCH2 Productivity Extension"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://cch2.org/portal/collections/editor/occurrencetabledisplay.php"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}
